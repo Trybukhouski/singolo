@@ -157,6 +157,10 @@ margin: auto;
   padding: 2px 4px;
   border-radius: 5px;
 }
+.filter-link:hover {
+  color: #DEDEDE;
+  border: 1px solid #BBBBBB;
+}
 
 .portfolio-list {
   display: grid;
