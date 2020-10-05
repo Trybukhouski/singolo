@@ -82,6 +82,38 @@ width: 1020px;
 margin: auto;
 }
 
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 54px;
+}
+
+.button-left {
+  background-image: url(./img/arrow-left.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.button-left:hover {
+  width: 21px;
+  height: 35px;
+}
+.button-right {
+  background-image: url(./img/arrow-right.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.button-right:hover {
+  width: 21px;
+  height: 35px;
+}
+.button-right, .button-left {
+  width: 16px;
+  height: 27px;
+  border: none;
+  background-color: #F06C64;
+}
+
 /*Services*/
 .services {
   width: 100%;
