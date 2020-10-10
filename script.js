@@ -1,18 +1,8 @@
-//Fixed header
-/*
-const navigationButton = document.querySelectorAll('.main-navigation');
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 0 && window.scrollY < 510) {
-    navigationButton.classList.add("navigation-button-new");
-  } else if (window.scrollY >= 511 && window.scrollY < 1000) {
-    navigationButton.classList.remove("navigation-button-new");
-  }
-});
 
 /*Fixed header*/
 const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 89) {
+  if (window.scrollY > 0) {
     header.classList.add("static-header");
   } else {
     header.classList.remove("static-header");
@@ -39,6 +29,8 @@ burgerButton.addEventListener("click", () => {
   navigationItem[4].classList.toggle("navigation-item-bg");
   navigation.classList.toggle("navigation");
 });
+
+
 
 /*Active buttons*/
 const active = document.querySelectorAll(".navigation-button");
@@ -110,12 +102,22 @@ window.addEventListener("scroll", () => {
 /*Slider*/
 const sliderButton = document.querySelectorAll(".slider-button");
 const slider = document.querySelector(".slider");
+
 sliderButton[0].addEventListener("click", () => {
   slider.classList.toggle("slider-active");
 })
 sliderButton[1].addEventListener("click", () => {
   slider.classList.toggle("slider-active");
 })
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    sliderButton[0].classList.add("slider-button-invisible");
+    sliderButton[1].classList.add("slider-button-invisible");
+  } else {
+    sliderButton[0].classList.remove("slider-button-invisible");
+    sliderButton[1].classList.remove("slider-button-invisible");
+  }
+});
 
 /*Portfolio mixing*/
 function getRandomInt(min, max) {
@@ -165,3 +167,17 @@ activePortfolioButtons[3].addEventListener("click", () => {
   activePortfolioButtons[1].classList.remove("active-portfolio-button");
   activePortfolioButtons[2].classList.remove("active-portfolio-button");
 })
+
+/*Scroll animation*/
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href')
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}

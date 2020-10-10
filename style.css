@@ -16,6 +16,7 @@ header {
   border-bottom: 6px solid #2D303A;
 }
 .wrapper {
+  width: 100%;
   background-color:  #2D303A;
   display: flex;
   justify-content: space-between;
@@ -80,7 +81,6 @@ header {
   padding-top: 54px;
   margin-left: 40px;
   margin-right: 40px;
-  background-color: powderblue;
 }
 .slider-pictures {
   width: 796px;
@@ -90,11 +90,19 @@ header {
   justify-content: space-between;
   overflow: hidden;
 }
-
+.slider-button {
+  display: none;
+  position: absolute;
+  top: 378px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .button-left {
   background-image: url(./img/arrow-left.svg);
   background-size: 100%;
   background-repeat: no-repeat;
+  left: 50px;
 }
 .button-left:hover {
   width: 21px;
@@ -104,6 +112,7 @@ header {
   background-image: url(./img/arrow-right.svg);
   background-size: 100%;
   background-repeat: no-repeat;
+  right: 50px;
 }
 .button-right:hover {
   width: 21px;
@@ -112,8 +121,9 @@ header {
 .button-right, .button-left {
   width: 16px;
   height: 27px;
+  background-color: transparent;
   border: none;
-  background-color: #F06C64;
+  outline: none;
 }
 
 /*Services*/
@@ -197,13 +207,15 @@ header {
 }
 
 .portfolio-list {
+  width: 940px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
+  gap: 20px;
 }
 
-.portfolio-image {
+.portfolio-image img{
   width: 220px;
   height: 187px;
 }
@@ -225,6 +237,9 @@ footer {
   width: 152px;
   margin-top: 22px;
   margin-right: 42px;
+}
+.social-button:hover {
+transform: scale(1.2, 1.2);
 }
 footer span {
   margin-left: 40px;

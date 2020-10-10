@@ -9,8 +9,8 @@
   background-color: #648BF0;
   border-bottom: 6px solid #648BF0;
 }
-.slider-picture-off{
-  display: none;
+.slider-button-invisible {
+display: none;
 }
 .random {
   order: -1;
