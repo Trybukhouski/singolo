@@ -1,0 +1,48 @@
+.static-header {
+  position: fixed;
+  top: 0px;
+}
+.active-button {
+  color: #F06C64;
+}
+.slider-active {
+  background-color: #648BF0;
+  border-bottom: 6px solid #648BF0;
+}
+.slider-picture-off{
+  display: none;
+}
+.random {
+  order: -1;
+}
+.active-portfolio-button {
+  color: #DEDEDE;
+  border: 1px solid #BBBBBB;
+}
+.wrapper-bg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color:  #2D303A;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 278px;
+  height: 100%;
+  z-index: 1;
+}
+.main-navigation-bg {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 180px;
+  padding-left: 71px;
+}
+.navigation-item-bg {
+  display: flex;
+  flex-direction: column;
+}
+.logo-bg {
+  font-size: 19px;
+  margin-left: 71px;
+}
