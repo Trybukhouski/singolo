@@ -118,6 +118,14 @@ window.addEventListener("scroll", () => {
     sliderButton[1].classList.remove("slider-button-invisible");
   }
 });
+const sliderPicture = document.querySelectorAll(".slider-picture");
+sliderButton[0].addEventListener("click", () => {
+  sliderPicture[0].classList.toggle("first-picture-toggle");
+})
+sliderButton[1].addEventListener("click", () => {
+  sliderPicture[0].classList.toggle("first-picture-toggle");
+})
+
 
 /*Portfolio mixing*/
 function getRandomInt(min, max) {

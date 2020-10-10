@@ -82,9 +82,11 @@ header {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 .slider-pictures {
   width: 796px;
   height: 483px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

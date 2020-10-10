@@ -13,6 +13,10 @@
   margin-left: 29px;
   margin-right: 29px;
 }
+.slider-pictures {
+  width: 599px;
+  height: 363px;
+}
 .slider-picture {
   width: 599px;
   height: 364px;
@@ -127,6 +131,10 @@ header {
   padding-top: 21px;
   margin-left: 10px;
   margin-right: 10px;
+}
+.slider-pictures {
+  width: 287px;
+  height: 174px;
 }
 .slider-picture {
   width: 293px;
